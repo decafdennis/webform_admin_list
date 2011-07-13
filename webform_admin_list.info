@@ -1,0 +1,7 @@
+; Developed by Dennis Stevense for Digital Deployment
+name = Webform admin list
+description = Overrides the webforms content management page so that it only shows content that has form components.
+package = Webform
+core = 6.x
+
+dependencies[] = webform

@@ -1,0 +1,11 @@
+<?php
+// Developed by Dennis Stevense for Digital Deployment
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function webform_admin_list_menu_alter(&$items) {
+  $items['admin/content/webform']['page callback'] = 'webform_admin_list_page';
+  $items['admin/content/webform']['file'] = 'webform_admin_list.inc';
+  $items['admin/content/webform']['file path'] = drupal_get_path('module', 'webform_admin_list');
+}
